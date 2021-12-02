@@ -1,8 +1,3 @@
-# Pulse Width Modulation (PWM) and Hardware Timers 
-
-In this lecture we are going to look a bit deeper at some of the hardware peripherals within our ESP32 devices. In particular, we will explore the Pulse Width Modulation (PWM) hardware peripherals and the hardware timer modules.
-
-
 # Digital-to-Analogue conversion
 There are two main ways to perform digital-to-analogue conversion:
 
