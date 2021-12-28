@@ -30,7 +30,7 @@ There are however, problems with this approach. Putting resistors in silicon is 
 As mentioned above the ESP32 has two DAC channels that we can use that I'll quickly demonstrate.
 For this course we wont go too deep into the configuration of the DAC hardware, instead we will use the Arduino ``dacWrite()`` libraries provided for interfacing with it.
 
-However, if you are keen to explore further, then on page 637 of the [[ESP32 TRM](https://www.espressif.com/sites/default/files/documentation/esp32_technical_reference_manual_en.pdf)] details are given for the DAC hardware module. The ESP32 DAC has some interesting features, such as a cosine wave generator, which is a block of hardware that can be configured to generate cosine waves by itself.
+However, if you are keen to explore further, then on page 628 of the [[ESP32 TRM](https://www.espressif.com/sites/default/files/documentation/esp32_technical_reference_manual_en.pdf)] details are given for the DAC hardware module. The ESP32 DAC has some interesting features, such as a cosine wave generator, which is a block of hardware that can be configured to generate cosine waves by itself.
 
 ![](imgs/tinypico_pinout_dac.jpg.svg)
 
@@ -188,7 +188,7 @@ Decreasing the duty-cycle will have the opposite effect, decreasing the average 
 
 ### Generating PWM signals
 
-Often it is a requirement that PWM signals are very accurate, for instance, they might be driving motor controllers that need incredible high accuracy. To be able to adjust the simulated voltage with high precision requires, the ability to generate square-waves with high-accuracy at high-frequencies.
+Often it is a requirement that PWM signals are very accurate, for instance, they might be driving motor controllers that need incredible high accuracy. To be able to adjust the simulated voltage with high precision requires the ability to generate square-waves with high-accuracy at high-frequencies.
 
 As we saw in [[Lecture 3](https://github.com/STFleming/EmSys_GPIO_and_Abstraction_Costs)] it can be difficult to reliably generate precise waveforms from software. This is especially true if we want to generate accurate signals at high frequencies:
 
